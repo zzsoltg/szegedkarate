@@ -1,0 +1,103 @@
+/* Mobil eszközökre egyszerűsített, de testreszabott stílusok */
+
+body {
+    padding-top: 70px; /* A fix navbar miatt szükséges */
+}
+
+header#navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+header#navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+.bubbles {
+    flex-direction: column;
+}
+
+.bubble {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.edzes-leirasok {
+    flex-direction: column;
+}
+
+.edzes-leiras {
+    width: 100%;
+}
+
+.tortenet,
+.eredmenyek,
+.edzeseink-container {
+    flex-direction: column;
+}
+
+.maps,
+.edzeseink-table {
+    width: 100%;
+}
+
+.news-item {
+    width: 100%;
+}
+
+.gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-container {
+    flex-direction: column;
+}
+
+#contact-form,
+.contact-info {
+    width: 100%;
+}
+
+/* Slider stílusok */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.slide {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
